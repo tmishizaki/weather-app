@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { ForecastCardProps } from "@/types/ForecastType"
 import { todayKeyJst, formatJstFromUnixSec } from "@/lib/format";
 import { saveCache, loadCache } from "@/lib/cache";
 import { FetchByCity, FetchByGeo, ForecastResponse } from "@/types/FetchForecastType";
