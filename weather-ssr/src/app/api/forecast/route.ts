@@ -20,6 +20,8 @@ export async function GET(req: NextRequest) {
   url.searchParams.set("lang", lang);
   url.searchParams.set("appid", appid);
 
+
+  console.log(`route: ${url}`)
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) {
     const text = await res.text();
