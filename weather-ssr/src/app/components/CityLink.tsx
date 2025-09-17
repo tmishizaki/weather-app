@@ -44,7 +44,7 @@ export default function CityLink({ city }: { city: string }) {
   };
 
   return (
-    <button onClick={go} className="btn-primary w-full text-base">
+    <button onClick={go} className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">
       {city}
     </button>
   );
