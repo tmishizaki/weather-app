@@ -1,3 +1,5 @@
+// Fetch時に必要な型定義
+
 export type ForecastItem = {
   dt: number;
   main: { temp: number };

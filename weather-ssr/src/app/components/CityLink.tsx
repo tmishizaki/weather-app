@@ -2,6 +2,25 @@
 
 import { useRouter } from "next/navigation";
 
+/**
+ * 指定された都市へのリンクを生成するコンポーネント。
+ * クリックすると `/weather/[city]` ページへ遷移し、その都市の天気予報を表示できる。
+ *
+ * - Next.js の `<Link>` を利用してクライアントサイドナビゲーションを実現
+ * - 都市名は自動的にエンコードされ、URL パラメータに安全に渡される
+ *
+ * @param props - コンポーネントのプロパティ
+ * @param props.city - 遷移先の都市名（例: "Tokyo"）
+ * @param props.children - リンク内に表示する要素（テキストやアイコン）
+ *
+ * @example
+ * ```tsx
+ * <CityLink city="Tokyo">東京の天気</CityLink>
+ * <CityLink city="兵庫">
+ *   <span className="font-bold">兵庫</span> の天気
+ * </CityLink>
+ * ```
+ */
 export default function CityLink({ city }: { city: string }) {
   const router = useRouter();
 
