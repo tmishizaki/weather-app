@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* 全ページ共通のベース適用（任意） */
+@layer base {
+  body { @apply m-6 font-sans; } /* 余白24px + システムサンセリフ */
+  header { @apply mb-4; }        /* 余白16px */
+}
