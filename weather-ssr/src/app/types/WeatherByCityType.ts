@@ -1,0 +1,1 @@
+export type WeatherByCityPageProps = { params: Promise<{ city: string }> };
